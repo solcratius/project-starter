@@ -1,6 +1,6 @@
 # Solcratius project-starter
 
-Description goes here.
+Starter kit for next frontend project based on webpack.
 
 ### Installation
 
