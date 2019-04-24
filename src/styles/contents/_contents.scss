@@ -1,0 +1,151 @@
+section.main-section {
+  padding-top: 0 !important;
+}
+
+.footer .social-links ul li {
+  @include breakpoint(752 down) {
+    margin-left: 0 !important;
+  }
+
+  a i {
+    font-size: rem-calc(28) !important;
+    line-height: 1.35em !important;
+  }
+}
+
+.challenge-impulse {
+  color: $body-font-color;
+
+  .main-content {
+    background: url("../images/section-bg.jpg") no-repeat center 70px;
+    background-size: contain;
+    background-color: $body-background;
+
+    // .bg-container {
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100vh;
+    //   top: rem-calc(60);
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   min-width: rem-calc(1200);
+    //   background: url("../images/section-bg.jpg") no-repeat center top;
+    //   background-size: contain;
+    //   z-index: 0;
+    // }
+  }
+
+  section {
+    background-color: transparent;
+    color: $white;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: rem-calc(60);
+    text-align: left;
+
+    &.page-title { padding-top: rem-calc(50); }
+
+    @include breakpoint(medium up) {
+      padding-bottom: rem-calc(80);
+
+      &.page-title { padding-top: rem-calc(70); }
+    }
+  }
+
+  h1, h2, h3 {
+    font-family: $prag;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -1.5pt;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+
+  h5, h6 {
+    font-wieght: 300;
+  }
+
+  p {
+    color: $gray4;
+    font-size: rem-calc(14);
+    font-weight: 400;
+    margin: 0 auto rem-calc(20);
+
+    @include breakpoint(medium up) {
+      font-size: rem-calc(16);
+      margin-bottom: rem-calc(25);
+    }
+
+    @include breakpoint(large up) {
+      font-size: rem-calc(18);
+      margin-bottom: rem-calc(30);
+    }
+  }
+
+  .page-title {
+    h1 {
+      padding-bottom: rem-calc(33);
+    }
+
+    h4 {
+      // margin-bottom: rem-calc(10);
+      margin-bottom: rem-calc(14);
+
+      @include breakpoint(medium up) {
+        margin-bottom: rem-calc(10);
+      }
+    }
+  }
+
+  .section-title {
+    padding-bottom: rem-calc(20);
+    @include clearfix;
+
+    h3 {
+      color: $white;
+      padding: rem-calc(10 0 7);
+      float: left;
+    }
+  }
+
+  .funds .section-title {
+    margin-bottom: 0;
+  }
+
+  .more-btn {
+    background-color: transparent;
+    border: rem-calc(1) solid $white;
+    display: inline-block;
+    float: right;
+    font-size: rem-calc(12);
+    font-weight: bold;
+    line-height: rem-calc(16);
+    min-width: rem-calc(160);
+    padding: rem-calc(16);
+    text-align: center;
+    text-transform: uppercase;
+
+    @include breakpoint(medium down) {
+      display: none;
+    }
+  }
+
+  .kiwi {
+    color: $kiwi;
+  }
+
+  .white {
+    color: $white;
+  }
+
+  .red {
+    color: #ff0000;
+  }
+
+  &.no-touch {
+    .more-btn:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
+}
